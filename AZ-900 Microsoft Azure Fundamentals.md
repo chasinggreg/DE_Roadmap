@@ -4,13 +4,13 @@
 
 Path Overview
 
-![AZ-900 Overview](path.png)
+![AZ-900 Overview](./Assets/path.png)
 
 ## Module 1
 
 🔷<b>Describe cloud concepts (15-20%)</b>
 
-![alt text](path-1.png)
+![alt text](./Assets/path-1.png)
 
 ### Cloud Computing, High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
 
@@ -44,11 +44,11 @@ Cloud computing is a delivery model for four service types:
 
 <ul>
 
-![alt text](image-4.png)
-![alt text](image.png)
-![alt text](image-3.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](./Assets/image-4.png)
+![alt text](./Assets/image.png)
+![alt text](./Assets/image-3.png)
+![alt text](./Assets/image-1.png)
+![alt text](./Assets/image-2.png)
 
 </ul>
 
@@ -224,7 +224,7 @@ Some services share hardware with other customers
 
 🔷 Describe core Azure services (30-35%)
 
-![alt text](path-2.png)
+![alt text](./Assets/path-2.png)
 
 Describe the core Azure architectural components
 
@@ -325,7 +325,7 @@ Describe Azure management tools
 
 ## Module 3
 
-![alt text](path-3.png)
+![alt text](./Assets/path-3.png)
 
 🔷 Describe Security, Privacy, Compliance, and Trust (25-30%)
 
@@ -369,7 +369,7 @@ Describe privacy and compliance resources
 
 ## Module 4
 
-![alt text](path-4.png)
+![alt text](./Assets/path-4.png)
 
 Describe Azure cost management and Service Level Agreements (10-15%)
 Describe methods for planning and managing costs

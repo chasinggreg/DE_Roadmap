@@ -40,7 +40,7 @@ Now, let’s define data pipelines.
 
 ## What is a Data Pipeline?
 
-![alt text](afb588_data_pipeline_diagram_estuary_c6c16b58ee.webp)
+![alt text](./Assets/afb588_data_pipeline_diagram_estuary_c6c16b58ee.webp)
 
 A data pipeline is a system that takes data from its various sources and funnels it to its destination. It’s one component of an organization’s data infrastructure.
 
@@ -90,7 +90,7 @@ So, you now know that you definitely need a data pipeline and that you may alrea
 
 It helps to understand a bit more about how data pipelines work.
 
-![alt text](b85e70_02_what_is_a_data_pipeline_data_pipeline_process_bb3264c20d.webp)
+![alt text](./Assets/b85e70_02_what_is_a_data_pipeline_data_pipeline_process_bb3264c20d.webp)
 
 To give an overview of how a data pipeline works, we’ll start with a simple analogy that we’ve made before on the blog. A data pipeline is like any other pipe: say, a pipe that gets water from a source (the local reservoir) and carries it to its destination (your faucet).
 
