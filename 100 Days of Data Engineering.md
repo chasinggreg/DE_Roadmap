@@ -1,5 +1,7 @@
 # 100 Days of Data Engineering
 
+[Seattle Data Guy](https://www.youtube.com/@SeattleDataGuy) lays out a [Roadmap](https://docs.google.com/spreadsheets/d/1a5TMdF7Vz-YdvlHXnNHLMeHk7lV-TdRjbPoxMrQ_cSE/edit?usp=sharing) in his YouTube video [Fastest way to become a Data Engineer in 2024 - 100 Days Of Data Engineering](https://youtu.be/9FVchWw3EbU?si=RPr-GEFkYV0JgW47)
+
 ---
 
 **100 Days Note**

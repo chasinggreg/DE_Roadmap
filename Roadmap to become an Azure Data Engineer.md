@@ -1,13 +1,28 @@
 # Roadmap to become an Azure Data Engineer
 
-## Stage 1: Python and SQL
+![alt text](./Assets/Roadmap%20Steps.png)
+
+## Stage 1: SQL and Python
+
+### WHY SQL?
+
+SQL is important for data engineers because it helps them easily organize, retrieve, and work with information stored in databases.
+
+#### Steps
+
+1. Watch the video below to receive a fundamental introduction to SQL, spending 3 hours
+   to become familiar with its syntax and concepts.
+   Programming with Mosh: https://www.youtube.com/watch?v=7S_tz1z_5bA
+2. Practice as much as possible using W3 Schools.
+   W3 School link: https://www.w3schools.com/sql/
+   Practice is the Key- if you are absolute beginner spend 15 days to learn SQL.
 
 ### WHY PYTHON?
 
 Python is crucial for data engineers because it offers a versatile and readable programming
 language with extensive libraries, facilitating efficient data manipulation and analysis in various data engineering tasks.
 
-#### Steps:
+#### Steps
 
 1. Watch the awesome video below to receive a basic introduction to Python and become
    familiar with its syntax and concepts in 1 Hour.
@@ -15,19 +30,6 @@ language with extensive libraries, facilitating efficient data manipulation and 
 2. Practice as much as possible using W3 Schools
    W3 School link: https://www.w3schools.com/python/
    Practice is the Key- if you are an absolute beginner spend 15 days to learn Python.
-
-### WHY SQL?
-
-SQL is important for data engineers because it helps them easily organize, retrieve, and work with information stored in databases.
-
-#### Steps:
-
-3. Watch the video below to receive a fundamental introduction to SQL, spending 3 hours
-   to become familiar with its syntax and concepts.
-   Programming with Mosh: https://www.youtube.com/watch?v=7S_tz1z_5bA
-4. Practice as much as possible using W3 Schools.
-   W3 School link: https://www.w3schools.com/sql/
-   Practice is the Key- if you are absolute beginner spend 15 days to learn SQL.
 
 ## Stage 2: Data Warehouse Concepts
 
@@ -40,12 +42,7 @@ create organized repositories of information, like a well-structured library, ma
 
 https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/
 
-Download the third edition using the below link for free:
-Books/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf at master · ms2ag16/Books · GitHub
-
-Okay, I hear you 😊 If you are an absolute beginner, I understand this might be a little
-overwhelming for you. To overcome this, I have taken a simple approach by noting down some
-of the most important topics in data warehousing, which are more than enough to get started as a data engineer. The topics are as follows:
+If you are an absolute beginner, I understand this might be a little overwhelming for you. To overcome this, I have taken a simple approach by noting down some of the most important topics in data warehousing, which are more than enough to get started as a data engineer. The topics are as follows:
 
 ### TOPICS
 
@@ -88,18 +85,16 @@ Azure, essential for anyone looking to build a career in cloud computing.
 
 There are lots of free resources available on the Internet for AZ-900. If you are a video person like me, who likes to learn things by watching videos, you can watch any ONE (based on your preference) of the below videos to prepare for the exam.
 
-1. FreeCodeCamp.org: https://www.youtube.com/watch?v=NKEFWyqJ5XA
-2. Adam Marczak: https://www.youtube.com/watch?v=NPEsD6n9A_I&list=PLGjZwEtPN7j-
-   Q59JYso3L4_yoCjj2syrM
-3. Edureka: https://www.youtube.com/watch?v=wK3U7xSt31M
+1. AZ-900 Azure Fundamentals Exam Cram (2024 Edition) - Full Course by Inside Cloud and Security: https://youtu.be/8n-kWJetQRk?si=DsZkp01YiiLUnrMi
 
-### Test your Learnings!
+### Test your Learning!
 
 Once you are done learning the AZ-900 concepts, it’s now time to test your learnings. There is a wonderful website called ExamTopics that will have DUMPS (real-time questions) for the
 certifications. You can use this website to answer the questions and test your learnings.
 Make sure you learn all the questions before you book the exam. One thing to be aware of is
 that, for each question, there will be a discussion tab. Make sure you read the comments from
 the discussion and validate the right answer for the question (mostly the highly voted one will be the right answer). It is important to check the discussion because sometimes the answer given to the question might be wrong, so please go through the discussion tab for all the questions.
+
 https://www.examtopics.com/exams/microsoft/az-900/
 
 ### Book the Exam.
@@ -239,3 +234,79 @@ If you complete all the 6 stages, then you can consider yourself an Intermediate
 Engineer. You can apply for any Junior to Intermediate level Azure Data Engineering role. The
 only final thing you need to concentrate on is to build your resume/CV in a proper way by
 including all the required technologies that you learned in the above 6 stages. If you are not a beginner, it would not take a full 6 months to complete all the 6 stages; however, a beginner would need at least 6 months to prepare.
+
+Certainly! Here's a combined plan integrating the Azure-centric data engineering course with preparation for the AZ-900, DP-900, and DP-203 certifications, along with an estimated amount of study time per day:
+
+### Month 1: Foundations of Data Engineering with Azure and AZ-900
+
+#### Week 1-2: Introduction to Azure Data Engineering and Azure Fundamentals (AZ-900)
+
+- **Daily Study Time:** 2-3 hours
+- Understand Azure basics and cloud concepts.
+- Learn about Azure Data Factory, Azure Databricks, Azure Synapse Analytics, and related services.
+- Study data engineering fundamentals in Azure.
+- Review AZ-900 exam topics and concepts.
+
+#### Week 3-4: Relational Databases, SQL in Azure, and AZ-900
+
+- **Daily Study Time:** 2-3 hours
+- Dive deeper into Azure SQL Database.
+- Practice SQL for Azure Data Engineers.
+- Review and reinforce AZ-900 concepts.
+- Take practice exams for AZ-900 to gauge understanding.
+
+### Month 2: Big Data Technologies on Azure and DP-900
+
+#### Week 1-2: Azure HDInsight (Hadoop) and Spark, and DP-900
+
+- **Daily Study Time:** 2-3 hours
+- Study Azure HDInsight, Spark on Azure Databricks, and related big data technologies.
+- Review DP-900 exam topics and concepts.
+- Take practice exams for DP-900 to assess readiness.
+
+#### Week 3-4: Azure Stream Analytics, Event Hubs, and DP-900
+
+- **Daily Study Time:** 2-3 hours
+- Explore Azure Stream Analytics and Azure Event Hubs.
+- Practice implementing real-time data pipelines.
+- Continue DP-900 exam preparation with focused study sessions and practice exams.
+
+### Month 3: Data Pipeline Orchestration, Automation, and DP-203
+
+#### Week 1-2: Azure Data Factory and DP-203
+
+- **Daily Study Time:** 2-3 hours
+- Deep dive into Azure Data Factory.
+- Review DP-203 exam topics and objectives.
+- Take practice exams for DP-203 to identify areas for improvement.
+
+#### Week 3-4: Monitoring, Error Handling, and DP-203
+
+- **Daily Study Time:** 2-3 hours
+- Explore Azure Monitor and Azure Logic Apps.
+- Practice implementing monitoring and error handling in data pipelines.
+- Continue DP-203 exam preparation with targeted study sessions and practice exams.
+
+### Month 4: Advanced Topics, Capstone Project, and DP-203
+
+#### Week 1-2: Azure Synapse Analytics and DP-203
+
+- **Daily Study Time:** 2-3 hours
+- Study Azure Synapse Analytics and its capabilities.
+- Review advanced topics for the DP-203 exam.
+- Take additional practice exams for DP-203 to reinforce knowledge.
+
+#### Week 3-4: Capstone Project with Azure and DP-203
+
+- **Daily Study Time:** 2-3 hours
+- Work on a real-world data engineering project using Azure services.
+- Finalize preparations for the DP-203 exam with focused study sessions and practice exams.
+
+### Additional Resources and Practice
+
+- **Daily Study Time:** 1 hour
+- Use Microsoft Learn, official documentation, and reputable online platforms for additional study materials and practice exams.
+- Engage with online communities and forums for support and knowledge sharing.
+- Stay updated with Azure news and announcements to ensure alignment with current industry trends.
+
+By dedicating consistent study time each day and following this structured plan, you'll be well-prepared to both master data engineering concepts on Azure and pass the AZ-900, DP-900, and DP-203 certifications. Adjust the study time as needed based on your learning pace and commitments. Good luck with your studies and certifications!

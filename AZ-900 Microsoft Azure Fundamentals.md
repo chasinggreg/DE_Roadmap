@@ -8,7 +8,7 @@ Path Overview
 
 ## Module 1
 
-🔷<b>Describe cloud concepts (15-20%)</b>
+🔷**Describe cloud concepts (15-20%)**
 
 ![alt text](./Assets/path-1.png)
 
@@ -18,39 +18,35 @@ Path Overview
 
 Service delivery model over the internet (cloud). This includes but is not limited to:
 
-<ul><li><b>Compute Power</b>  meaning servers such as windows, linux, hosting environments, etc.</li>
-<li><b>Storage</b>  like files and/or databases</li>
-<li><b>Networking</b>  in azure but also outside when connecting to your company network</li>
-<li><b>Analytics</b>  services for visualization and telemetry data</li></ul>
+- **Compute Power** meaning servers such as windows, linux, hosting environments, etc.
+- **Storage** like files and/or databases
+- **Networking** in azure but also outside when connecting to your company network
+- **Analytics services** for visualization and telemetry data
 
 Cloud computing is a delivery model for four service types:
 
-<ul><li>Storage</li>
-<li>Compute Power</li>
-<li>Analytics</li>
-<li>Networking</li></ul>
+- Storage
+- Compute Power
+- Analytics
+- Networking
 
 ##### Key concepts
 
-<ul><li><b>Scalability</b> - the ability to scale, so allocate and deallocate resources at any time</li>
-<li><b>Elasticity</b> - the ability to scale dynamically</li>
-<li><b>Agility</b> - the ability to react fast (scale quickly)</li>
-<li><b>Fault Tolerance</b> - the ability to maintain system uptime while physical and service component failures happen</li>
-<li><b>Disaster Recovery</b> - the process and design principle which allows a system to recovers from natural or human induced disasters</li>
-<li><b>High Availability</b> - the agreed level of operational uptime for the system. It is a simple calculation of system uptime versus whole lifetime of the system.</li>
-<li><b>Availability</b> = uptime/(uptime + downtime)</li></ul>
+- **Scalability** - the ability to scale, so allocate and deallocate resources at any time
+- **Elasticity** - the ability to scale dynamically
+- **Agility** - the ability to react fast (scale quickly)
+- **Fault Tolerance** - the ability to maintain system uptime while physical and service component failures happen
+- **Disaster Recovery** - the process and design principle which allows a system to recovers from natural or human induced disasters
+- **High Availability** - the agreed level of operational uptime for the system. It is a simple calculation of system uptime versus whole lifetime of the system.
+- **Availability** = uptime/(uptime + downtime)
 
 ##### SUMMARY
-
-<ul>
 
 ![alt text](./Assets/image-4.png)
 ![alt text](./Assets/image.png)
 ![alt text](./Assets/image-3.png)
 ![alt text](./Assets/image-1.png)
 ![alt text](./Assets/image-2.png)
-
-</ul>
 
 ### Principles of economies of scale
 
@@ -86,13 +82,12 @@ The consumption-based model is a pricing model used in the cloud so that custome
 
 This model is characterized by
 
-<ul>
-<li><b>No associated upfront cost</b></li>
-<li><b>No wasted resources</b> as such no charges are incurred for unused resources*. Unused in this case is different per service. For instance, blob storage that stores any data is considered to be used, as it consumes the storage space. Virtual Machines that are running consume CPU, memory and other resources even if there isn’t any traffic. Hence they are considered to be used and will incur charges.</li>
-<li><b>Pay for what you need</b></li>
-<li><b>Stop paying when you don’t</b></li></ul>
+- **No associated upfront cost**
+- **No wasted resources** as such no charges are incurred for unused resources\*. Unused in this case is different per service. For instance, blob storage that stores any data is considered to be used, as it consumes the storage space. Virtual Machines that are running consume CPU, memory and other resources even if there isn’t any traffic. Hence they are considered to be used and will incur charges.
+- **Pay for what you need**
+- **Stop paying when you don’t**
 
-<b>Consumption</b> is the virtual metric used to calculate how much each resource (service) in Azure was used. Each service has many smaller metrics that track its consumption to offer best possible pricing model. Those metrics are tracked on very granular level.
+**Consumption** is the virtual metric used to calculate how much each resource (service) in Azure was used. Each service has many smaller metrics that track its consumption to offer best possible pricing model. Those metrics are tracked on very granular level.
 
 ### IaaS, PaaS, SaaS and their differences
 
@@ -100,9 +95,9 @@ This model is characterized by
 
 As a service means which party will manage the particular layer and all the layers below.
 
-<ul><li>Software layer consists the application (application code and set) & the application data</li>
-<li>Platform layer means all the supporting software and the operating system required to host the application</li>
-<li>Infrastructure layer consists hardware the infrastructure and virtualization required to host the platform</li></ul>
+- Software layer consists the application (application code and set) & the application data
+- Platform layer means all the supporting software and the operating system required to host the application
+- Infrastructure layer consists hardware the infrastructure and virtualization required to host the platform
 
 | Layer            | Layer          |
 | ---------------- | -------------- |
@@ -135,7 +130,7 @@ As such following table represents responsibilities
 
 #### Cloud Deployment Model
 
-<b>Cloud Deployment Model</b> is simple a separation which describes where are the company resources deployed. Whenever this is in public cloud provider environment or private datacenter.
+**Cloud Deployment Model** is simple a separation which describes where are the company resources deployed. Whenever this is in public cloud provider environment or private datacenter.
 
 Below table presents high level deployment model separation
 
@@ -159,18 +154,18 @@ Some services share hardware with other customers
 
 ##### Advantages
 
-<ul><li>No CapEx (No initial investment)</li>
-<li>High Availability</li>
-<li>Agility</li>
-<li>Pay as you Go (PAYG) pricing</li>
-<li>No hardware maintenance</li>
-<li>No deep technical skills required</li></ul>
+- No CapEx (No initial investment)
+- High Availability
+- Agility
+- Pay as you Go (PAYG) pricing
+- No hardware maintenance
+- No deep technical skills required
 
 ##### Disadvantages
 
-<ul><li>Not all security and compliance policies can be met</li>
-<li>No ownership over the physical infrastructure</li>
-<li>Rare specific scenarios can’t be done</li></ul>
+- Not all security and compliance policies can be met
+- No ownership over the physical infrastructure
+- Rare specific scenarios can’t be done
 
 #### Private Cloud
 
@@ -180,21 +175,21 @@ Some services share hardware with other customers
 
 ##### Key Characteristics
 
-<ul><li>Everything runs on your own datacenter</li>
-<li>Self-service should be provided</li>
-<li>You maintain the hardware</li></ul>
+- Everything runs on your own datacenter
+- Self-service should be provided
+- You maintain the hardware
 
 ##### Advantages
 
-<ul><li>Can support any scenario</li>
-<li>Total control over security and infrastructure</li>
-<li>Can meet any security and compliance policy</li></ul>
+- Can support any scenario
+- Total control over security and infrastructure
+- Can meet any security and compliance policy
 
 ##### Disadvantages
 
-<ul><li>Initial investment is required (CapEx)</li>
-<li>Limited agility constrained by server capacity and team skills</li>
-<li>Very dependent on IT skills & expertise</li></ul>
+- Initial investment is required (CapEx)
+- Limited agility constrained by server capacity and team skills
+- Very dependent on IT skills & expertise
 
 #### Hybrid Cloud
 
@@ -204,21 +199,21 @@ Some services share hardware with other customers
 
 ##### Key Characteristic
 
-<ul><li>Combines both Public & Private cloud</li></ul>
+- Combines both Public & Private cloud
 
 ##### Advantages
 
-<ul><li>Great flexibility</li>
-<li>You can run any legacy apps in private cloud</li>
-<li>Can utilize existing infrastructure</li>
-<li>Meet any security& compliance requirements</li>
-<li>Can take advantage of all public cloud benefits</li></ul>
+- Great flexibility
+- You can run any legacy apps in private cloud
+- Can utilize existing infrastructure
+- Meet any security& compliance requirements
+- Can take advantage of all public cloud benefits
 
 ##### Disadvantages
 
-<ul><li>Can be more expensive</li>
-<li>Complicated to manage due to larger landscape</li>
-<li>Most dependent on IT skills & expertise from all three models</li></ul>
+- Can be more expensive
+- Complicated to manage due to larger landscape
+- Most dependent on IT skills & expertise from all three models
 
 ## Module 2
 
@@ -232,44 +227,44 @@ Describe the core Azure architectural components
 
 #### Data Center
 
-<ul><li><b>Physical facility</b></li>
-<li><b>Hosting for</b> group of networked servers</b></li>
-<li>Own <b>power, cooling & networking</b> infrastructure</li></ul>
+- **Physical facility**
+- **Hosting for** group of networked servers
+- Own **power, cooling & networking** infrastructure
 
 #### Region
 
-<ul><li><b>Geographical area</b> on the planet</li>
-<li><b>One but usually more datacenters</b> connected with <b>low-latency network</b> (<2 milliseconds)</li>
-<li><b>Location</b> for your services</li>
-<li>Some services are <b>available only in certain regions</b></li>
-<li>Some services are <b>global services</b>, as such are not assigned/deployed in specific region</li>
-<li>Globally available with <b>50+ regions</b></li>
-<li>Special <b>government regions</b> (US DoD Central, US Gov Virginia, etc.)</li>
-<li>Special <b>partnered regions</b> (China East, China North)</li></ul>
+- **Geographical area** on the planet
+- **One but usually more datacenters** connected with **low-latency network** (<2 milliseconds)
+- **Location** for your services
+- Some services are **available only in certain regions**
+- Some services are **global services**, as such are not assigned/deployed in specific region
+- Globally available with **50+ regions**
+- Special **government regions** (US DoD Central, US Gov Virginia, etc.)
+- Special **partnered regions** (China East, China North)
 
 #### Availability Zone
 
-<ul><li><b>Regional feature</b></li>
-<li>Grouping of <b>physically separate</b> facilities</li>
-<li>Designed to <b>protect from data center failures</b></li>
-<li>If zone goes down <b>others continue working</b></li>
-<li>Two service categories</li>
-    <ul><li>Zonal services (Virtual Machines, Disks, etc.)</li>
-    <li>Zone-redundant services (SQL, Storage, etc.)</li></ul>
-<li>Not all regions are supported</li>
-<li>Supported region has three or more zones</li>
-<li>A zone is one or more data centers</li></ul>
+- **Regional feature**
+- Grouping of **physically separate** facilities
+- Designed to **protect from data center failures**
+- If zone goes down **others continue working**
+- Two service categories
+  - Zonal services (Virtual Machines, Disks, etc.)
+  - Zone-redundant services (SQL, Storage, etc.)
+- Not all regions are supported
+- Supported region has three or more zones
+- A zone is one or more data centers
 
 #### Region Pair
 
-<ul><li>Each region is paired with another region making it a region pair</li>
-<li>Region pairs are static and cannot be chosen</li>
-<li>Each pair resides within the same geography*</li>
-    <ul><li>Exception is Brazil South</li></ul>
-<li>Physical isolation with at least 300 miles distance (when possible)</li>
-<li>Some services have platform-provided replication</li>
-<li>Planned updates across the pairs</li>
-<li>Data residency maintained for disaster recovery</li></ul>
+- Each region is paired with another region making it a region pair
+- Region pairs are static and cannot be chosen
+- Each pair resides within the same geography\*
+  - Exception is Brazil South
+- Physical isolation with at least 300 miles distance (when possible)
+- Some services have platform-provided replication
+- Planned updates across the pairs
+- Data residency maintained for disaster recovery
 
 | Region Pair A          | Region Pair B              |
 | ---------------------- | -------------------------- |
@@ -280,16 +275,16 @@ Describe the core Azure architectural components
 
 #### Geographies
 
-    Discrete market
-    Typically contains two or more regions
-    Ensures data residency, sovereignty, resiliency, and compliance requirements are met
-    Fault tolerant to protect from region wide failures
-    Broken up into areas
-        Americas,
-        Europe,
-        Asia Pacific,
-        Middle East and Africa
-    Each region belongs only to one Geography
+- **Discrete market**
+- Typically **contains two or more regions**
+- Ensures data residency, sovereignty, resiliency, and compliance requirements are met
+  Fault tolerant to protect from region wide failures
+  Broken up into areas
+  Americas,
+  Europe,
+  Asia Pacific,
+  Middle East and Africa
+  Each region belongs only to one Geography
 
 ### Episode 8: Azure Resource Groups and Resource Manager
 
