@@ -277,3 +277,140 @@ The Cloud could be <b>OpenStack</b>
 Using both <span style="color:red"><b>On-Premise</b></span> and a <span style="color:red"><b>Cloud Service Provider</b></span>
 
 ![alt text](./Assets/hybrid_deployment.png)
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ra6b{background-color:#dae8fc;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-zgh4{background-color:#9aff99;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-1zak{background-color:#ffce93;color:#333333;text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax">Cost</th>
+    <th class="tg-0lax">Security</th>
+    <th class="tg-0lax">Level of Configuration</th>
+    <th class="tg-0lax">Technical Knowledge</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Public Cloud</td>
+    <td class="tg-zgh4">👍 Most cost-effective</td>
+    <td class="tg-ra6b">👍- Security controls by default<br>👎 - Might not meet security requirements</td>
+    <td class="tg-1zak">👎 Limited based on what the Cloud Service Provider exposes to you</td>
+    <td class="tg-zgh4">👍 You don't need in-depth knowledge of underlying infrastructure</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Private Cloud</td>
+    <td class="tg-1zak">👎 Most Expensive</td>
+    <td class="tg-ra6b">👎 - No guarantee its secure<br>👍 - Can meet any security compliance requirement if you put in the work</td>
+    <td class="tg-zgh4">👍 You can configure the infrastructure however you like</td>
+    <td class="tg-1zak">👎 You need to know in-depth knowledge to configure all levels of your instance</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Hybrid Cloud</td>
+    <td class="tg-ra6b">👍 Could be more cost-effective based on what you offload to the cloud</td>
+    <td class="tg-ra6b">👎 - You now have to secure your connection to the cloud<br>👍 - Can meet all security requirements</td>
+    <td class="tg-zgh4">👍 You get the best of both worlds</td>
+    <td class="tg-1zak">👎 You need to know in-depth how to configure all levels of your infrastructure and know all the CSPs services.</td>
+  </tr>
+</tbody>
+</table></div>
+
+## Total Cost of Ownership (TCO)
+
+### CAPEX
+
+On-Premise
+
+- Implementation
+- Configuration
+- Training
+- <span style="color:red">Physical Security</span>
+- <span style="color:red">Hardware</span>
+- <span style="color:red">IT Personnel</span>
+- <span style="color:red">Maintenance</span>
+
+<span style="color:red"><b>Azure's Responsibility</b></span>
+
+### OPEX
+
+Azure
+
+- Subscription Fees
+- Implementation
+- COnfiguration
+- Training
+
+<span style="color:red"><b>= 75% Savings</b></span>
+
+## Capital vs Operational Expenditure
+
+### Capital Expenditure (CAPEX)
+
+<mark>**Spending money upfront**</mark> on physical infrastructure deducting that expense from your tax bill over time.
+
+- Server Costs (computers)
+- Storage Costs (hard drives)
+- Network Costs (Routers, Cables, Switches)
+- Backup and Archive Costs
+- Disaster Recovery Costs
+- Datacenter Costs (Rent, Cooling, Physical Security)
+- Technical Personnel
+
+With Capital Expenditures <span style="color:red"><b>you have to guess upfront</b></span> what you plan to spend
+
+### Operational Expenditure (OPEX)
+
+The costs associated with an on-premises datacenter that has shifted the cost to the service provider. The customer only has to be concerned with non-physical costs.
+
+- Leasing Software and Customizing features
+- Training Employees in Cloud Services
+- Paying for Cloud Support
+- Billing based on cloud metrics eg.
+  - compute usage
+  - storage usage
+
+With Operation Expenses you can try a product or service <span style="color:red"><b>without investing in equipment</b></span>
+
+## Cloud Architecture Terminologies
+
+### Solutions Architect
+
+A role in a technical organization that architects a technical solution using multiple systems via researching, documentation, and experimentation.
+
+### Cloud Architect
+
+A solutions architect that is focued solely on architecting techniceal solutions using cloud services.
+
+A cloud architect needs to understand the followikng terms and factor them into their designed architecture based on the business requirements.
+
+- **Availability** - Your ability to ensure a service available eg. Highly available (HA)
+- **Scalability** - Your ability to grow rapidly or unimpeded
+- **Elasticity** - Your ability to shrink and grow to meet the demand
+- **Fault Tolerance** - Your ability to prevent a failure
+- **Disaster Recovery** - Your ability to recover from a failure eg. Highly Durable (DR)
+
+A Solutions Architect needs to always consider the following business factors:
+
+- Security - how secure is this solution?
+- Cost - how much is this going to cost?
+
+## High Availability
+
+Your ability for your service to <span style="color:red"><b>remain available</b></span> by ensuring there is <mark>no single point of failure</mark> and/or ensure a certain level of performance.
+
+![alt text](./Assets/multiple_available_zones.png)
+
+Running your workload across multiple **Available Zones** ensures that if 1 or 2 AZs become unavailable, your service/applications remains available.
+
+### Azure Load Balancer
+
+A load balancer allows you to evenly distribute traffic to multiple servers in one or more datacenter. If a datacenter or server becomes unavailable (unhealthy) the load balancer will route the traffic to only available datacenters with servers.
