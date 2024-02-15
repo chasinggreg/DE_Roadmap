@@ -407,10 +407,67 @@ A Solutions Architect needs to always consider the following business factors:
 
 Your ability for your service to <span style="color:red"><b>remain available</b></span> by ensuring there is <mark>no single point of failure</mark> and/or ensure a certain level of performance.
 
-![alt text](./Assets/multiple_available_zones.png)
+![Multiple Available Zones](./Assets/multiple_available_zones.png)
 
 Running your workload across multiple **Available Zones** ensures that if 1 or 2 AZs become unavailable, your service/applications remains available.
 
 ### Azure Load Balancer
 
 A load balancer allows you to evenly distribute traffic to multiple servers in one or more datacenter. If a datacenter or server becomes unavailable (unhealthy) the load balancer will route the traffic to only available datacenters with servers.
+
+## High Scalability
+
+Your ability to <span style="color:red"><b>increase your capacity</b></span> based on the increasing demand of traffic, memory, and computing power.
+
+![High Scalability](./Assets/high_scalability.png)
+
+## High Elasticity
+
+Your ability to <span style="color:red"><b>automatically</b></span> increase or decrease your capacity based on the current demand of traffic, memory, and computing power
+
+![High Elasticity](./Assets/high_elasticity.png)
+
+### Azure VM Scale Sets
+
+Automatically increase or decrease in response to demand or a defined schedule.
+
+### SQL Server Stretch Database
+
+Dynamically stretch warm and cold transactional data from Microsoft SQL Server 2016 to Microsoft Azure
+
+Vertical Scaling is generally hard for traditional architecture so you'll usually only see horizontal scaling described with Elasticity.
+
+## Highly Fault Tolerant
+
+Your ability for your service to ensure there is <mark>no single point of failure</mark>. <span style="color:red"><b>Preventing</b></span> the chance of failure.
+
+### Fail-overs
+
+When you have a plan to shift traffic to a redundant system in case the primary system fails.
+
+![Failover Example](./Assets/failover_example.png)
+
+A common example is having a copy (secondary) of your database where all ongoing changes are synced. The secondary system is not in-use until a fail over occurs and it becomes the primary database.
+
+You can use **Azurre Traffic Manager** which is a DNS-based traffic balancer to fail-over from a failing primary system to a stand-by secondary system.
+
+## High Durability
+
+Your ability to <span style="color:red"><b>recover</b></span> from a disaster and to prevent <span style="color:red"><b>the loss</b></span> of data. Solutions that recover from a disaster is known as <mark>**Disaster Recover (DR)**</mark>
+
+- Do you have a backup?
+- How fast can you restore that backup?
+- Does your backup still work?
+- How do you ensure current live data is not corrupt?
+
+## Business Continuity Plan (BCP)
+
+A **business continuity plan** (BCP) is a document that outlines how a business will continue operating <span style="color:red"><b>during an unplanned disruption in services</b></span>.
+
+![Business Continuity Plan](./Assets/business_continuity_plan.png)
+
+## Disaster Recovery Options
+
+There are multiple options for recovery that trade cost vs time to recover.
+
+![Disaster Recovery Options](./Assets/disaster_recovery_options.png)
