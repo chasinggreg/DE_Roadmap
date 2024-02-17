@@ -31,7 +31,7 @@ language with extensive libraries, facilitating efficient data manipulation and 
    W3 School link: https://www.w3schools.com/python/
    Practice is the Key- if you are an absolute beginner spend 15 days to learn Python.
 
-## Stage 2: Data Warehouse Concepts
+## Stage 2: Data Warehouse and Data Modeling Concepts
 
 ### WHY DATA WAREHOUSE?
 
@@ -70,6 +70,10 @@ If you are an absolute beginner, I understand this might be a little overwhelmin
 
 After watching all the above videos, you will get to know all the foundational concepts of data warehousing. Focus on the second month of this challenge completely for learning the data warehousing concepts. If you are familiar with any of the above-mentioned topics already, try to use the time to learn additional topics from the Kimball book.
 
+### Data Modeling
+
+![alt text](./Assets/data_modeling_TransactionalvsAnalytical.png)
+
 ## Stage 3: AZ-900 - Microsoft Azure Fundamentals Certification
 
 ### Why AZ-900?
@@ -89,10 +93,7 @@ There are lots of free resources available on the Internet for AZ-900. If you ar
 
 ### Test your Learning!
 
-Once you are done learning the AZ-900 concepts, it’s now time to test your learnings. There is a wonderful website called ExamTopics that will have DUMPS (real-time questions) for the
-certifications. You can use this website to answer the questions and test your learnings.
-Make sure you learn all the questions before you book the exam. One thing to be aware of is
-that, for each question, there will be a discussion tab. Make sure you read the comments from
+Once you are done learning the AZ-900 concepts, it’s now time to test your learnings. One thing to be aware of is that, for each question, there will be a discussion tab. Make sure you read the comments from
 the discussion and validate the right answer for the question (mostly the highly voted one will be the right answer). It is important to check the discussion because sometimes the answer given to the question might be wrong, so please go through the discussion tab for all the questions.
 
 https://www.examtopics.com/exams/microsoft/az-900/

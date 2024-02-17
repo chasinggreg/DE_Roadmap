@@ -88,6 +88,37 @@ Imagine having a virtual network being able to define internet connections or ne
 
 Imagine a virtual database for storing reporting data or a database for general purpose web-application.
 
+## Essential Azure Services
+
+### Compute
+
+**Azure VM** – A virtual server that supports both Linux and Windows operating systems. You can allow or deny the traffic going to your VMs using a network security group.
+Azure Functions – A serverless compute that allows you to write functions using C#, Java, JavaScript, Python, and PowerShell.
+Azure Kubernetes Service – It allows you to orchestrate and manage multiple containers, but the control plane and worker nodes upgrades are done manually.
+
+### Storage
+
+**Azure Blob** – An object storage service of Azure. A single blob container size is the same as the maximum storage account capacity.
+Azure Disk – A block storage for virtual machines. You can protect your disks from failure with the data redundancy feature.
+Azure Files – It enables you to mount file shares in popular operating systems such as Linux, Windows, and macOS.
+
+### Database
+
+**Azure SQL Database** – A relational database service that supports Microsoft SQL server.
+Azure Cosmos DB – A database service for document store, graph DBMS, key-value, and wide column store.
+
+### Networking
+
+**Azure VNet** – A private network to run your VMs and applications. You can segment your virtual network between a /16 and /29 netmask.
+Azure CDN – It enables you to deliver web content closer to users. It has multiple point-of-presence locations in a region.
+Azure Traffic Manager – Distribute incoming traffic based on the routing method of your choice and Azure DNS helps you manage your DNS records.
+
+### Security
+
+**Azure Active Directory** – An identity and access management service that allows you to create and manage users and groups. You can use RBAC to grant users certain roles to access specific resources.
+Azure Key Vault – A service that allows you to store tokens, passwords, certificates, and other secrets. You can also create and manage the keys used to encrypt your data.
+Azure Application Gateway – A web traffic load balancer for the distribution of HTTP requests. It also has a web application firewall that protects your web applications from commonly known vulnerabilities.
+
 ## Cloud Services Models
 
 <style type="text/css">
@@ -471,3 +502,177 @@ A **business continuity plan** (BCP) is a document that outlines how a business 
 There are multiple options for recovery that trade cost vs time to recover.
 
 ![Disaster Recovery Options](./Assets/disaster_recovery_options.png)
+
+## Evolution of computing
+
+### Dedicated Server
+
+![Physical Server](./Assets/physical_server.png)
+
+- A physical server <span style="color:red"><b>wholly utilized by a single customer</b></span>
+- you have to guess your capacity, you'll overpay for an underutilized server
+- upgrading beyond your capacity will be slow and expensive
+- you are limited by your Operating System
+- multiple apps can result in conflicts in resource sharing
+- you have a <span style="color:green"><b>guarantee of security, privacy, and full utility of underlying resources</b></span>
+
+### Virtual Machines (VMs)
+
+![Virtual Machines](./Assets/virtual_machines.png)
+
+- You can run <span style="color:red"><b>multiple Virtual Machines on one machine</b></span>
+- <mark>**Hypervisor**</mark> is the software layer that lets you run the VMs
+- A physical server shared by multiple customers
+- You are paying for a fraction of the server
+- You'll overpay for an underutilized Virtual Machine
+- You are limited by your Guest Operating System
+- Multiple apps on a single Virtual Machine can result in conflicts in resource sharing
+
+## Containers
+
+![alt text](./Assets/containers.png)
+
+- Virtual Machine running multiple containers
+- <mark>**Docker Deamon**</mark> is the name of the software layer that lets you run multiple containers
+- You can maximize the utility of the available capacity which is more cost-effective
+- Your containers share the same underlyingg OS so containers are more efficient than multiple VMs
+- Multiple apps can run side by side without being limited to the same OS requirements and will not cause conflicts during resource sharing
+
+## Functions
+
+![alt text](./Assets/functions.png)
+
+- A managed VM running managed containers
+- Known as <span style="color:red"><b>Serverless Compute</b></span>
+- You upload a piece of code you choose the amount of memory and duration
+- Only responsible for code and data, nothing else
+- Very cost-effective, only pay for the time the code is running, VMs only run when there is code to be executed
+- Cold Starts is a side-effect of this setup
+
+## Global Infrastructure - Regions and Geographies
+
+A <span style="color:red"><b>region</b></span> is a grouping of multiple datacenters (Availabiltiy Zones)
+
+Azure has 58 Regions available across 140 Countries
+
+A <span style="color:red"><b>Geography</b></span> is discreet market of two or more regions that preserves **_data residency_** and **_compliance boundaries_**.
+
+### Azure Geographies
+
+- United States
+- Azure Government (US)
+- Canada
+- Brazil
+- Mexico
+
+![alt text](./Assets/regions_selection.png)
+
+## Paired Regions
+
+Each region is paired with another region <span style="color:red"><b>300 miles</b></span> away.
+
+Only one region is updated at a time to ensure no outages.
+
+Some Azure Services rely on Paired Regions for <mark>**Disaster Recovery**</mark>
+
+eg. **Azure Geo-redundant Storage (GRS)** replicates data to a secondary region automatically ensuring that data is durable even in the event that the region isn't recoverable.
+
+![alt text](./Assets/paired_regions.png)
+
+## Global Infrustrature - Region Types and Service Availability
+
+**Not all Azure Cloud Services** are available in every region.
+
+### Recommended region
+
+A region that provides the broadest range of service capabilities and is <span style="color:red"><b>designed to support Availability Zones</b></span> now, or in the future.
+
+### Alternate (other) region
+
+A region that extends Azure's footprint within a dat residency boundary where a recommended region also exists. <span style="color:red"><b>Not designed to support AZs</b></span>.
+
+These Regions are labeled as <mark>**Other**</mark> in the Azure Portal.
+
+General availability (GA) is when a service is considered ready to be used publicly by everyone.
+
+Azure Cloud Services are grouped into three categories.
+Their category determines when cloud services become available:
+
+1. **Foundational**. When GA, immediately or in 12 months in the Reommended and Alternate Regions
+2. **Mainstream**. When GA immediately or in 12 months in Recommended Regions. May become available in Alternate Regions based on customer demand.
+3. **Specialized**. Available in Recomemmeded or Alternate Region based on customer demand.
+
+## Global Infrastrucure - Special Regions
+
+Azure has specialized regions to meet <mark>**compliance or legal reasons**</mark>.
+
+![US Flag](./Assets/usa-flag.jpg)
+
+- US DoD Central
+- US Gov Virginia
+- US Gov Iowa
+
+<span style="color:red"><b>Three Azure Government secret locations undisclosed</b></span>
+
+![China Flag](./Assets/china-flag.jpg)
+
+- China East
+- China North
+
+<span style="color:red"><b>Available through a unique partnership between Microsoft and 21Vianet. Microsoft does not directly maintain the datacenters.</b></span>
+
+## Global Infrastructure - Availability Zones
+
+An <span style="color:red"><b>Availability Zone</b></span> (AZ) is physical location made up of one or more datacenter.
+
+A datacenter is a secured building that contains hundreds or thousands of computers.
+
+A region will <mark>**generally**</mark> contain **3 Availability Zones**
+
+Datacenters within a region will be isolated from each other (so different buildings). But they will be close enough to provide low-latency.
+
+Its common practice to run workloads in at least 3 AZs to ensure services remain available in case one or two datacenters fail. (High Availability)
+
+![alt text](./Assets/availability_zones_example.png)
+
+## Global Infrastructure - AZ Supported Regions
+
+Not every Region has support for Availability Zones
+
+These regions are known as <mark>**Alternate**</mark> or <mark>**Other**</mark>
+
+Recommended Regions are suppose to have at least 3 AZs.
+
+The following Regions <span style="color:red"><b>have a minimum of 3 AZs</b></span>:
+
+- Central US
+- East US
+- West US
+- West Europe
+- France Central
+- North Europe
+- Southeast Asia
+
+![alt text](./Assets/no_az.png)
+
+## Global Infrastructure - Fault and Update Domains
+
+An availability Zone (AZ) in an Azure region is <span style="color:red"><b>a combination of</b></span> a <mark>**fault domain**</mark> and an <mark>**update domain**</mark>.
+
+### Fault Domain
+
+A logical grouping of hardware to avoid a single point of failure within an AZ. Group of virtual machines that share a common power source and network switch.
+
+### Update Domain
+
+Azure may need to apply updates to the underlying hardware and software. Update domains ensure your resources do not go offline.
+
+### Availabilty Set
+
+A logical grouping that you can use in Azure to ensure that the VMs you place in the Availability Set are different fault/update domains to avoid downtime.
+
+**Each Virtual Machine** in an Availability Set is assigned a Fault Domain and Update Domain.
+
+![alt text](./Assets/fault_domain.png)
+
+![alt text](./Assets/availability_set.png)
