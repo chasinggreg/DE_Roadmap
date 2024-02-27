@@ -74,11 +74,11 @@ The term "cloud computing" can be used to refer to all categories, even though i
 
 ### Compute
 
-Imagine having a virtual computer that can run applications, programs, and code.
+- Imagine having a virtual computer that can run applications, programs, and code.
 
 ### Storage
 
-Imagine having a virtual hard-drive that can store files.
+- Imagine having a virtual hard-drive that can store files.
 
 ### Networking
 
@@ -186,105 +186,18 @@ Azure is Microsoft's cloud computing platform with an ever-expanding services to
 - Low Cost
 - Speed
 
+## Azure Cloud Service Models
+
+The three cloud computing service models are IaaS, PaaS, and SaaS.
+You can also use serverless computing to eliminate the need to manage infrastructure.
+The shared responsibility model determines the security tasks that are handled by the cloud provider and handled by the customer.
+Azure is responsible for protecting the infrastructure such as hosts, network, and data center.
+The customer is responsible for protecting their data, endpoints, account, and access management.
+IaaS, PaaS, and SaaS have different levels of managed services:
+
 ## Cloud Computing Responsibilities
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-ra6b{background-color:#dae8fc;color:#333333;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-djj2{background-color:#dae8fc;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
-.tg .tg-9rbh{background-color:#3166ff;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">On-Premise</th>
-    <th class="tg-0pky">IaaS</th>
-    <th class="tg-0pky">PaaS</th>
-    <th class="tg-0pky">SaaS</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-ra6b">Applications</td>
-    <td class="tg-djj2">Applications</td>
-    <td class="tg-ra6b">Applications</td>
-    <td class="tg-9rbh">Applications</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Data</td>
-    <td class="tg-djj2">Data</td>
-    <td class="tg-djj2">Data</td>
-    <td class="tg-9rbh">Data</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Runtime</td>
-    <td class="tg-djj2">Runtime</td>
-    <td class="tg-9rbh">Runtime<br></td>
-    <td class="tg-9rbh">Runtime</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Middleware</td>
-    <td class="tg-djj2">Middleware</td>
-    <td class="tg-9rbh">Middleware</td>
-    <td class="tg-9rbh">Middleware</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">OS</td>
-    <td class="tg-djj2">OS</td>
-    <td class="tg-9rbh">OS<br></td>
-    <td class="tg-9rbh">OS</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Virtualization</td>
-    <td class="tg-9rbh">Virtualization</td>
-    <td class="tg-9rbh">Virtualization</td>
-    <td class="tg-9rbh">Virtualization</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Servers</td>
-    <td class="tg-9rbh">Servers</td>
-    <td class="tg-9rbh">Servers</td>
-    <td class="tg-9rbh">Servers</td>
-  </tr>
-  <tr>
-    <td class="tg-djj2">Storage</td>
-    <td class="tg-9rbh">Storage<br></td>
-    <td class="tg-9rbh">Storage</td>
-    <td class="tg-9rbh">Storage</td>
-  </tr>
-    <tr>
-    <td class="tg-djj2">Networking</td>
-    <td class="tg-9rbh">Networking<br></td>
-    <td class="tg-9rbh">Networking</td>
-    <td class="tg-9rbh">Networking</td>
-  </tr>
-</tbody>
-</table></div>
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-hfk9{background-color:#000000;border-color:#000000;text-align:left;vertical-align:top}
-.tg .tg-ra6b{background-color:#dae8fc;color:#333333;text-align:left;vertical-align:top}
-.tg .tg-ucgi{background-color:#3166ff;color:#ffffff;text-align:left;vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg">
-<thead>
-  <tr>
-    <td class="tg-hfk9">Legend:</td>
-    <td class="tg-ra6b">Customer is Responsibile</td>
-    <td class="tg-ucgi">CSP is Responsible</td>
-  </tr>
-</thead>
-</table></div>
+![alt text](./Assets/azure-cloud-service-models.png)
 
 ## Azure's Deployment Models
 

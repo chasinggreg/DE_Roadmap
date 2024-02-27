@@ -1,5 +1,9 @@
 # AZ-900 Microsoft Azure Fundamentals Notes
 
+<p align="center">
+  <img width="128" height="128" src="./Assets/microsoft-certified-fundamentals-badge.svg">
+</p>
+
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;">
 AZ-900 Microsoft Azure Fundamentals certification is the first and the most important certification for anyone who is just starting with Azure.
 </div>
@@ -20,27 +24,49 @@ Path Overview
 
 Service delivery model over the internet (cloud). This includes but is not limited to:
 
+![compute](./Assets/compute.png)
+
 - **Compute Power** meaning servers such as windows, linux, hosting environments, etc.
+
+![compute](./Assets/storage.png)
+
 - **Storage** like files and/or databases
+
+![compute](./Assets/networking.png)
+
 - **Networking** in azure but also outside when connecting to your company network
+
+![compute](./Assets/analytics.png)
+
 - **Analytics services** for visualization and telemetry data
 
-Cloud computing is a delivery model for four service types:
+#### Cloud Key concepts
 
-- Storage
-- Compute Power
-- Analytics
-- Networking
-
-##### Key concepts
+![alt text](./Assets/scalability.png)
 
 - **Scalability** - the ability to scale, so allocate and deallocate resources at any time
+
+![alt text](./Assets/elasticity.png)
+
 - **Elasticity** - the ability to scale dynamically
+
+![alt text](./Assets/agility.png)
+
 - **Agility** - the ability to react fast (scale quickly)
+
+![alt text](./Assets/fault_tolerance.png)
+
 - **Fault Tolerance** - the ability to maintain system uptime while physical and service component failures happen
+
+![alt text](./Assets/disaster_recovery.png)
+
 - **Disaster Recovery** - the process and design principle which allows a system to recovers from natural or human induced disasters
+
+![alt text](./Assets/high_availability.png)
+
 - **High Availability** - the agreed level of operational uptime for the system. It is a simple calculation of system uptime versus whole lifetime of the system.
-- **Availability** = uptime/(uptime + downtime)
+
+  - **Availability** = uptime/(uptime + downtime)
 
 ##### SUMMARY
 
@@ -54,9 +80,13 @@ Cloud computing is a delivery model for four service types:
 
 #### Economies of Scale
 
+![alt text](./Assets/economies_of_scale-1.png)
+
 The principle of economies of scale states that as the companies grow they become more effective at managing shared operations. Be that HR and hiring, taxes, accounting, internal operations, marketing, big purchases via contracts meaning better discounts, etc. etc.
 
 Because of those, companies can save/earn more which in return allows for reduction in cost of their services to their customers. This is so called ‘price per unit’.
+
+![alt text](./Assets/price-per-unit.png)
 
 It’s not possible to go to 0 because in the end some underlying infrastructure needs to run to provide the services. But the larger the scale the more benefits can be passed to customers.
 
@@ -67,14 +97,17 @@ In fact, in the current scale, Microsoft can already offer multiple services for
 #### CapEx vs OpEx
 
 Differences between Capital Expenditure and Operational Expenditure
-|| Capital Expenditure | Operational Expenditure |
-| --- | --- | --- |
-| Up front cost | Significant | None |
-| Ongoing cost | Low | Based on usage |
-| Tax Deduction | Over time | Same year |
-| Early Termination | No | Anytime |
-| Maintenance | Significant | Low |
-| Value over time | Lowers | No change |
+
+![alt text](./Assets/CapEx_vs_OpEx.png)
+
+|                   | Capital Expenditure | Operational Expenditure |
+| ----------------- | ------------------- | ----------------------- |
+| Up front cost     | Significant         | None                    |
+| Ongoing cost      | Low                 | Based on usage          |
+| Tax Deduction     | Over time           | Same year               |
+| Early Termination | No                  | Anytime                 |
+| Maintenance       | Significant         | Low                     |
+| Value over time   | Lowers              | No change               |
 
 ### Consumption-based model
 
@@ -82,12 +115,16 @@ Differences between Capital Expenditure and Operational Expenditure
 
 The consumption-based model is a pricing model used in the cloud so that customers are only charged based on their resource usage.
 
-This model is characterized by
+![alt text](./Assets/consumption-based_model.png)
+
+This model is characterized by:
 
 - **No associated upfront cost**
 - **No wasted resources** as such no charges are incurred for unused resources\*. Unused in this case is different per service. For instance, blob storage that stores any data is considered to be used, as it consumes the storage space. Virtual Machines that are running consume CPU, memory and other resources even if there isn’t any traffic. Hence they are considered to be used and will incur charges.
 - **Pay for what you need**
 - **Stop paying when you don’t**
+
+![alt text](./Assets/consumption-based_example.png)
 
 **Consumption** is the virtual metric used to calculate how much each resource (service) in Azure was used. Each service has many smaller metrics that track its consumption to offer best possible pricing model. Those metrics are tracked on very granular level.
 
@@ -115,6 +152,22 @@ As a service means which party will manage the particular layer and all the laye
 
 #### Responsibility Matrix
 
+##### On-Premises
+
+![alt text](./Assets/on-premise.png)
+
+##### IaaS
+
+![alt text](./Assets/iaas.png)
+
+##### PaaS
+
+![alt text](./Assets/paas.png)
+
+##### SaaS
+
+![alt text](./Assets/saas.png)
+
 As such following table represents responsibilities
 | Layer | On-Premises | IaaS | PaaS | SaaS |
 | --- | --- | --- | --- | --- |
@@ -127,6 +180,10 @@ As such following table represents responsibilities
 | Servers | You | Cloud provider | Cloud provider | Cloud provider |
 | Networking | You | Cloud provider | Cloud provider | Cloud provider |
 | Storage | You | Cloud provider | Cloud provider | Cloud provider |
+
+##### Summary
+
+![alt text](./Assets/cloud_model_summary.png)
 
 ### Episode 6: Public, Private, Hybrid cloud and their differences
 
@@ -143,6 +200,8 @@ Below table presents high level deployment model separation
 | Private | ✖              | ✅             |
 
 #### Public Cloud
+
+![alt text](./Assets/public_cloud.png)
 
 | Cloud Provider | Own Datacenter |
 | -------------- | -------------- |
@@ -171,6 +230,8 @@ Some services share hardware with other customers
 
 #### Private Cloud
 
+![alt text](./Assets/private_cloud.png)
+
 | Cloud Provider | Own Datacenter |
 | -------------- | -------------- |
 | ✖              | ✅             |
@@ -194,6 +255,8 @@ Some services share hardware with other customers
 - Very dependent on IT skills & expertise
 
 #### Hybrid Cloud
+
+![alt text](image-1.png)
 
 | Cloud Provider | Own Datacenter |
 | -------------- | -------------- |
@@ -229,11 +292,15 @@ Describe the core Azure architectural components
 
 #### Data Center
 
+![alt text](./Assets/data_center.png)
+
 - **Physical facility**
 - **Hosting for** group of networked servers
 - Own **power, cooling & networking** infrastructure
 
-#### Region
+#### Regions
+
+![alt text](./Assets/regions.png)
 
 - **Geographical area** on the planet
 - **One but usually more datacenters** connected with **low-latency network** (<2 milliseconds)
@@ -244,29 +311,42 @@ Describe the core Azure architectural components
 - Special **government regions** (US DoD Central, US Gov Virginia, etc.)
 - Special **partnered regions** (China East, China North)
 
+![alt text](./Assets/globabl_regions.png)
+
 #### Availability Zone
 
+![alt text](./Assets/availablitiy_zones.png)
+
 - **Regional feature**
-- Grouping of **physically separate** facilities
+- Grouping of **physically separate** facilities (multiple datacenters)
+
+  ![alt text](./Assets/multiple_datacenters.png)
+
 - Designed to **protect from data center failures**
 - If zone goes down **others continue working**
-- Two service categories
-  - Zonal services (Virtual Machines, Disks, etc.)
-  - Zone-redundant services (SQL, Storage, etc.)
-- Not all regions are supported
-- Supported region has three or more zones
-- A zone is one or more data centers
+- Two service **categories**
+
+  - **Zonal** services (Virtual Machines, Disks, etc.)
+  - **Zone-redundant** services (SQL, Storage, etc.)
+
+  ![alt text](./Assets/zone_redundant.png)
+
+- **Not all** regions are **supported**
+- **Supported** region has **three or more zones**
+- A **zone** is **one or more data centers**
 
 #### Region Pair
 
-- Each region is paired with another region making it a region pair
-- Region pairs are static and cannot be chosen
-- Each pair resides within the same geography\*
+![alt text](./Assets/region_pair.png)
+
+- **Each region** is **paired** with another region making it a region pair
+- Region **pairs are static** and cannot be chosen
+- Each pair resides within the **same geography**\*
   - Exception is Brazil South
-- Physical isolation with at least 300 miles distance (when possible)
-- Some services have platform-provided replication
-- Planned updates across the pairs
-- Data residency maintained for disaster recovery
+- **Physical isolation** with at least 300 miles distance (when possible)
+- Some services have **platform-provided replication**
+- **Planned updates** across the pairs
+- **Data residency** maintained for disaster recovery
 
 | Region Pair A          | Region Pair B              |
 | ---------------------- | -------------------------- |
@@ -277,22 +357,159 @@ Describe the core Azure architectural components
 
 #### Geographies
 
+![alt text](./Assets/geographies.png)
+
 - **Discrete market**
 - Typically **contains two or more regions**
-- Ensures data residency, sovereignty, resiliency, and compliance requirements are met
-  Fault tolerant to protect from region wide failures
-  Broken up into areas
-  Americas,
-  Europe,
-  Asia Pacific,
-  Middle East and Africa
-  Each region belongs only to one Geography
+- Ensures **data residency, sovereignty, resiliency, and compliance** requirements are met
+- **Fault tolerant** to protect from region wide failures
+- Broken up into areas
+  - **Americas**,
+  - **Europe**,
+  - **Asia Pacific**,
+  - **Middle East** and **Africa**
+- Each **region belongs only to one Geography**
 
 ### Episode 8: Azure Resource Groups and Resource Manager
 
-Describe some of the core products available in Azure
+![alt text](./Assets/azure_resources.png)
+
+#### Azure Resource
+
+- Object **used to manage services** in Azure
+- Represents **service lifecycle**
+- Saved as **JSON definition**
+
+![alt text](./Assets/json_azure.png)
+
+#### Resource Groups
+
+![alt text](./Assets/resource_group.png)
+
+- **Grouping** of resources
+- Holds **logically related** resources
+- Typically organizing by
+
+  - **Type**
+
+  ![alt text](./Assets/resource_group_type.png)
+
+  - **Lifecycle** (app, environment)
+
+  ![alt text](./Assets/resource_group_lifecycle.png)
+
+  - **Department**
+  - **Billing**,
+  - **Location** or
+  - **combination** of those
+
+#### Resource Manager
+
+- **Management Layer** for all resources and resource groups
+- **Unified** language
+- **Controls access** and **resources**
+
+![alt text](./Assets/azure_resource_manager.png)
+
+#### Additional Info
+
+- Each **resource must** be in one, and **only one resource group**
+- Resource **groups have their own location** assigned
+- Resources in the resource groups can **reside in a different locations**
+- Resources **can be moved** between the resource groups
+- Resource **groups can’t be nested**
+- Organize based on your organization needs but consider
+  - Billing
+  - Security and access management
+  - Application Lifecycle
 
 ### Episode 9: Azure Compute Services | Virtual Machine, VM Scale Set, App Service, Functions, Container ### Instances, Kubernetes Service
+
+#### Virtualization
+
+- Emulation of physical machines
+- Different virtual hardware configuration per machine/app
+- Different operating systems per machine/app
+- Total separation of environments
+  - file systems,
+  - services,
+  - ports,
+  - middleware,
+  - configuration
+
+#### Virtual Machines
+
+- Infrastructure as a Service (IaaS)
+- Total control over the operating system and the software
+- Supports marketplace and custom images
+- Best suited for
+  - Custom software requiring custom system configuration
+  - Lift-and-shift scenarios
+- Can run any application/scenario
+  - web apps & web services,
+  - databases,
+  - desktop applications,
+  - jumpboxes,
+  - gateways, etc.
+
+#### Virtual Machine Scale Sets
+
+- Infrastructure as a Service (IaaS)
+- Set of identical virtual machines
+- Built-in auto scaling features
+- Designed for manual and auto-scaled workloads like web services,\* batch processing, etc.
+
+#### Containers
+
+- Use host’s operating system
+- Emulate operating system (VMs emulate hardware)
+- Lightweight (no O/S)
+  - Development Effort
+  - Maintenance
+  - Compute & storage requirements
+- Respond quicker to demand changes
+- Designed for almost any scenario
+
+#### Azure Container Instances
+
+- Simplest and fastest way to run a container in Azure
+- Platform as a Service
+- Serverless Containers
+- Designed for
+  - Small and simple web apps/services
+  - Background jobs
+  - Scheduled scripts
+
+#### Azure Kubernetes Service (AKS)
+
+- Open-source container orchestration platform
+- Platform as a Service
+- Highly scalable and customizable
+- Designed for high scale container deployments (anything really!)
+
+#### App Service
+
+- Designed as enterprise grade web application service
+- Platform as a Service
+- Supports multiple programming languages and containers
+
+#### Azure Functions (Function Apps)
+
+- Platform as a Service
+- Serverless
+- Two hosting/pricing models
+  - Consumption-based plan
+  - Dedicated plan
+- Designed for micro/nano-services
+
+#### Azure Compute Services Summary
+
+- **Virtual Machines (IaaS)** - Custom software, custom requirements, very specialized, high degree of control
+- **VM Scale Sets (IaaS)** - Auto-scaled workloads for VMs
+- **Container Instances (PaaS)** - Simple container hosting, easy to start
+- **Kubernetes Service (PaaS)** - Highly scalable and customizable \* container hosting platform
+- **App Services (PaaS)** - Web applications, a lot of enterprise web \* hosting features, easy to start
+- **Functions (PaaS) (Function as a Service) (Serverless)** - micro/nano-services, excellent consumption-based pricing, easy to start
 
 ### Episode 10: Azure Networking Services | Virtual Network, Load Balancer, VPN Gateway, Application ## #Gateway, CDN
 
