@@ -425,7 +425,11 @@ Describe the core Azure architectural components
 
 ### Episode 9: Azure Compute Services | Virtual Machine, VM Scale Set, App Service, Functions, Container ### Instances, Kubernetes Service
 
+NOTE: [Watch this video first!](https://youtu.be/eyNBf1sqdBQ?si=LYm7f1gbLYLXa1oK)
+
 #### Virtualization
+
+![alt text](./Assets/virtualization.png)
 
 - Emulation of physical machines
 - Different virtual hardware configuration per machine/app
@@ -438,6 +442,8 @@ Describe the core Azure architectural components
   - configuration
 
 #### Virtual Machines
+
+![alt text](./Assets/azure_virtual_machines.png)
 
 - Infrastructure as a Service (IaaS)
 - Total control over the operating system and the software
@@ -461,6 +467,8 @@ Describe the core Azure architectural components
 
 #### Containers
 
+![alt text](./Assets/containers_vs_vms.png)
+
 - Use host’s operating system
 - Emulate operating system (VMs emulate hardware)
 - Lightweight (no O/S)
@@ -472,6 +480,8 @@ Describe the core Azure architectural components
 
 #### Azure Container Instances
 
+![alt text](./Assets/azure_container_instance.png)
+
 - Simplest and fastest way to run a container in Azure
 - Platform as a Service
 - Serverless Containers
@@ -482,12 +492,16 @@ Describe the core Azure architectural components
 
 #### Azure Kubernetes Service (AKS)
 
+![alt text](./Assets/azure_kubernetes_services.png)
+
 - Open-source container orchestration platform
 - Platform as a Service
 - Highly scalable and customizable
 - Designed for high scale container deployments (anything really!)
 
 #### App Service
+
+![alt text](./Assets/app_service.png)
 
 - Designed as enterprise grade web application service
 - Platform as a Service
@@ -502,6 +516,8 @@ Describe the core Azure architectural components
   - Dedicated plan
 - Designed for micro/nano-services
 
+![alt text](./Assets/azure_functions_summary.png)
+
 #### Azure Compute Services Summary
 
 - **Virtual Machines (IaaS)** - Custom software, custom requirements, very specialized, high degree of control
@@ -511,11 +527,181 @@ Describe the core Azure architectural components
 - **App Services (PaaS)** - Web applications, a lot of enterprise web \* hosting features, easy to start
 - **Functions (PaaS) (Function as a Service) (Serverless)** - micro/nano-services, excellent consumption-based pricing, easy to start
 
+![alt text](./Assets/compute_services_summary.png)
+
 ### Episode 10: Azure Networking Services | Virtual Network, Load Balancer, VPN Gateway, Application ## #Gateway, CDN
+
+#### Azure Networking
+
+- Connect cloud and on-premises
+- On-premise networking functionality
+
+#### Azure Virtual Network
+
+- Logically isolated networking components
+- Segmented into one or more subnets
+- Subnets are discrete sections
+- Enable communication of resources with each-other, internet and on-premises
+- Scoped to a single region
+- VNet peering allow cross region communication
+- Isolation, Segmentation, Communication, Filtering, Routing
+
+![alt text](./Assets/azure_virtual_network.png)
+
+![alt text](./Assets/network_security_group.png)
+
+#### Azure Load Balancer
+
+- Even traffic distribution
+- Supports both inbound and outbound scenarios
+- High-availability scenarios
+- Both TCP (transmission control protocol) and UDP (user datagram protocol) applications
+- Internal and External traffic
+- Port Forwarding
+- High scale with up to millions of flows
+
+![alt text](./Assets/azure_load_balancer.png)
+
+![alt text](./Assets/azure_load_balancer_segmented.png)
+
+#### VPN Gateway
+
+- Specific type of virtual network gateway for on-premises to azure traffic over the public internet
+
+![alt text](./Assets/azure_vpn_gateway.png)
+
+#### Application Gateway
+
+- Web traffic load balancer
+- Web application firewall
+- Redirection
+- Session affinity
+- URL Routing
+- SSL termination
+
+![alt text](./Assets/azure_application_gateway.png)
+
+#### Content Delivery Network
+
+- Define content
+- Minimize latency
+- POP (points of presence) with many locations
+
+![alt text](./Assets/content_delivery_network.png)
+
+#### Networking Summary
+
+- **Azure Virtual Network** - Emulation/representation of physical networking in the cloud, grouping, filtering and segmentation of network related resources
+- **Azure VPN Gateway** - Connecting On-Premises with the Vitural Network and Virtual Networks with each other (remember about VNet Peering)
+- **Azure Load Balancer** - Even traffic distribution for non-HTTP (non-web) traffic
+- **Azure Application Gateway** - Even traffic distribution for HTTP (web) traffic
+- **Azure Content Delivery** Network (CDN) - Global content caching & distribution to offload web applications and reduce latency
 
 ### Episode 11: Azure Storage Services | Blob, Disk, File and Archive
 
+#### Data Types
+
+- **Structured** - Data that can be represented using tables with very strict schema. Each row must follow defined schema. Some tables have defined relationships between them. Typically used in relational databases.
+- **Semi-structured** - Data that can be represented using tables but without strict defined schema. Rows must only have unique key identifier.
+- **Unstructured** - Any files in any format. Like binary files, application files, images, movies, etc.
+
+![alt text](./Assets/data_types.png)
+
+#### Storage Account
+
+- Group of services which include
+  - blob storage,
+  - queue storage,
+  - table storage, and
+  - file storage
+- Used to store
+  - files,
+  - messages, and
+  - semi-structured data
+- Highly scalable (up to petabytes of data)
+- Highly durable (99.999999999% - 11 nines, up to 16 nines)
+- Cheapest per GB storage
+
+![alt text](./Assets/azure_storage_account.png)
+
+#### Blob Storage
+
+- BLOB – binary large object – file
+- Designed for storage of files of any kind
+- Three storage tiers
+  - Hot – frequently accessed data
+  - Cool – infrequently accessed data (lower availability, high durability)
+  - Archive – rarely (if-ever) accessed data
+
+![alt text](./Assets/blob_storage.png)
+
+#### Queue Storage
+
+- Storage for small pieces of data (messages)
+- Designed for scalable asynchronous processing
+
+![alt text](./Assets/queue_storage.png)
+
+#### Table Storage
+
+- Storage for semi-structured data (NoSQL)
+  - No need for foreign joins, foreign keys, relationships or strict schema
+  - Designed for fast access
+- Many programming interfaces and SDKs
+
+![alt text](./Assets/azure_table_storage.png)
+
+#### File Storage
+
+- Storage for files accessed via shared drive protocols
+- Designed to extend on-premise file shares or implement lift-and-shift scenarios
+- Similar to BLOB but are files transferred using SMB
+  - They are both file storage services but BLOB has TONS and TONS of features for programming applications which need file storage capability whereas File Storage service is very simple and its only purpose is Share Drive connectivity. As such for 95%+ of cases use BLOB.
+
+![alt text](./Assets/azure_file_storage.png)
+
+#### Disk Storage
+
+- Disk emulation in the cloud
+- Persistent storage for Virtual Machines
+- Different
+  - sizes,
+  - types (SSD, HDD)
+  - performance tiers
+- Disk can be unmanaged or managed
+
 ### Episode 12: Database Services | Cosmos DB, SQL Database, SQL DB for MySQL and PostgreSQL, SQL Managed ### Instance
+
+#### Data Types - Once more
+
+- **Structured** - Data that can be represented using tables with very strict schema. Each row must follow defined schema. Some tables have defined relationships between them. Typically used in relational databases.
+- **Semi-structured** - Data that can be represented using tables but without strict defined schema. Rows must only have unique key identifier.
+- **Unstructured** - Any files in any format. Like binary files, application files, images, movies, etc.
+
+#### Cosmos DB
+
+- Globally distributed NoSQL (semi-structured data) Database service
+- Schema-less
+- Multiple APIs (SQL, MongoDB, Cassandra, Gremlin, Table Storage)
+- Designed for
+  - Highly responsive (real time) applications with super low latency responses <10ms
+  - Multi-regional applications
+
+#### SQL Database
+
+- **Relational database** service in the cloud (PaaS) (DBaaS - Database as a Service)
+- **Structured data** service defined using schema and relationships
+- **Rich Query Capabilities** (SQL)
+- **High-performance**, reliable, fully managed and secure database for building - applications
+
+#### Azure SQL product family
+
+- Azure **SQL Database** – Reliable relational database based on SQL Server
+- Azure **Database for MySQL** – Azure SQL version for MySQL database engine
+- Azure **Database for PostgreSQL** – Azure SQL version for PostgreSQL database engine
+- Azure **SQL Managed Instance** – Fully fledged SQL Server managed by cloud provider
+- Azure **SQL on VM** – Fully fledged SQL Server on IaaS
+- Azure **SQL DW (Synapse)** – Massively Parallel Processing (MPP) version of SQL Server
 
 ### Episode 13: Azure Marketplace
 
