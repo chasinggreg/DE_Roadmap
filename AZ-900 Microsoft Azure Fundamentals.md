@@ -256,7 +256,7 @@ Some services share hardware with other customers
 
 #### Hybrid Cloud
 
-![alt text](image-1.png)
+![alt text](./Assets/hybrid_cloud.png)
 
 | Cloud Provider | Own Datacenter |
 | -------------- | -------------- |
@@ -684,15 +684,22 @@ NOTE: [Watch this video first!](https://youtu.be/eyNBf1sqdBQ?si=LYm7f1gbLYLXa1oK
 - Schema-less
 - Multiple APIs (SQL, MongoDB, Cassandra, Gremlin, Table Storage)
 - Designed for
+
   - Highly responsive (real time) applications with super low latency responses <10ms
   - Multi-regional applications
 
-#### SQL Database
+  ![alt text](./Assets/cosmos_db.png)
+
+#### Azure SQL Database
 
 - **Relational database** service in the cloud (PaaS) (DBaaS - Database as a Service)
 - **Structured data** service defined using schema and relationships
 - **Rich Query Capabilities** (SQL)
 - **High-performance**, reliable, fully managed and secure database for building - applications
+
+![alt text](./Assets/azure_sql_db.png)
+
+![alt text](./Assets/sql_server_services.png)
 
 #### Azure SQL product family
 
@@ -702,6 +709,8 @@ NOTE: [Watch this video first!](https://youtu.be/eyNBf1sqdBQ?si=LYm7f1gbLYLXa1oK
 - Azure **SQL Managed Instance** – Fully fledged SQL Server managed by cloud provider
 - Azure **SQL on VM** – Fully fledged SQL Server on IaaS
 - Azure **SQL DW (Synapse)** – Massively Parallel Processing (MPP) version of SQL Server
+
+![alt text](./Assets/azure_sql_product_family.png)
 
 ### Episode 13: Azure Marketplace
 
