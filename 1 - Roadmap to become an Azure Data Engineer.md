@@ -10,16 +10,18 @@ SQL is important for data engineers because it helps them easily organize, retri
 
 #### SQL Steps
 
-1. Watch the video below to receive a fundamental introduction to SQL, spending 3 hours
+1. Watch the video below to receive a fundamental introduction to SQL, spending 4 hours
    to become familiar with its syntax and concepts.
 
-   Programming with Mosh: https://www.youtube.com/watch?v=7S_tz1z_5bA
+   [SQL Tutorial for Beginners [Ultimate Full Course] - From Zero to HERO](https://youtube.com/playlist?list=PLNcg_FV9n7qZDdRInCl7wfOO8yZqYX5hO&si=1VKq9-v1hvERVyXJ) by [Data with Baraa](https://www.youtube.com/@DataWithBaraa)
 
-2. Practice as much as possible using W3 Schools.
+2. [Advanced SQL Course | For Data Analytics](https://youtube.com/playlist?list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe&si=bB5Ky64QNPlqRD2f) by [Data with Baraa](https://www.youtube.com/@DataWithBaraa) on YouTube
 
-   W3 School link: https://www.w3schools.com/sql/
+3. [Practice as much as possible using W3 Schools](https://www.w3schools.com/sql/)
 
    Practice is the Key- if you are absolute beginner spend 15 days to learn SQL.
+
+4. [Intuitive SQL For Data Analytics - Tutorial](https://youtu.be/mXW7JHJM34k?si=TEq4xCeAbJXvGmOT) by [Vlad Gheorghe](https://www.youtube.com/channel/UCPTHkTRS4ohdVONhHhu-kQg) on YouTube
 
 ### WHY PYTHON?
 
@@ -31,7 +33,7 @@ language with extensive libraries, facilitating efficient data manipulation and 
 1. Watch the awesome video below to receive a basic introduction to Python and become
    familiar with its syntax and concepts in 1 Hour.
 
-   The complete guide to Python by [Clear Code](https://www.youtube.com/@ClearCode) on YouTube: https://youtu.be/mDKM-JtUhhc?si=1IOXoeY7DoVBWLRE
+   [The complete guide to Python](https://youtu.be/mDKM-JtUhhc?si=1IOXoeY7DoVBWLRE) by [Clear Code](https://www.youtube.com/@ClearCode) on YouTube
 
 2. Practice as much as possible using W3 Schools
    W3 School link: https://www.w3schools.com/python/
@@ -53,9 +55,9 @@ If you are an absolute beginner, I understand this might be a little overwhelmin
 
 ### TOPICS
 
-1. What is a Data Warehouse? [What Is a Data Warehouse? - YouTube](https://www.youtube.com/watch?v=AHR_7jFCMeY)
-2. OLAP vs OLTP: Explain By Example: [OLTP vs OLAP - YouTube](https://www.youtube.com/watch?v=aRT8E0nD_LE)
-3. What is Normalization? [Normalization Techniques](https://www.youtube.com/watch?v=ABwD8IYByfk&t=443s)
+1. What is a Data Warehouse? [What Is a Data Warehouse?](https://www.youtube.com/watch?v=AHR_7jFCMeY) on YouTube
+2. OLAP vs OLTP: Explain By Example: [OLTP vs OLAP](https://www.youtube.com/watch?v=aRT8E0nD_LE) on YouTube
+3. What is Normalization? [Normalization Techniques](https://www.youtube.com/watch?v=ABwD8IYByfk&t=443s) on YouTube
 4. What is a Fact Table?
 5. What is a Dimension Table?
 6. Data Modelling: Star Schema vs Snowflake Schema
@@ -66,14 +68,14 @@ If you are an absolute beginner, I understand this might be a little overwhelmin
 
 7. Slowly Changing Dimensions (SCD)- Type 1 and Type 2:
    [What is SCD / Slowly Changing Dimension | Data Engineering Tutorial | Data Engineering
-   Concepts - YouTube](https://www.youtube.com/watch?v=kDRwHPxagJc&t=31s)
+   Concepts](https://www.youtube.com/watch?v=kDRwHPxagJc&t=31s) on YouTube
 8. What is a Data Mart? Data Mart vs Datawarehouse
-   [How Data Mart actually works? We are here to show you! - YouTube](https://www.youtube.com/watch?v=8auh5SdH-jA)
+   [How Data Mart actually works? We are here to show you!](https://www.youtube.com/watch?v=8auh5SdH-jA) on YouTube
 9. What is Extract Transform Load (ETL)?
    https://www.youtube.com/watch?v=j5HUv8RvuL4&t=3s (understand the ETL part)
 10. What is a Data Lake? DataLake vs Data Warehouse vs Database
     [KNOW the difference between Data Base // Data Warehouse // Data Lake (Easy
-    Explanation👌) - YouTube](https://www.youtube.com/watch?v=WgIbvkyY4mI)
+    Explanation👌)](https://www.youtube.com/watch?v=WgIbvkyY4mI) on YouTube
 
 After watching all the above videos, you will get to know all the foundational concepts of data warehousing. Focus on the second month of this challenge completely for learning the data warehousing concepts. If you are familiar with any of the above-mentioned topics already, try to use the time to learn additional topics from the Kimball book.
 
@@ -83,12 +85,14 @@ After watching all the above videos, you will get to know all the foundational c
 
 ## Stage 3: AZ-900 - Microsoft Azure Fundamentals Certification
 
+[See my AZ-900 Microsoft Azure Fundatmentals Notes](https://github.com/chasinggreg/100_Days_DA/blob/813a21a6969cc5d789ca58ea4ed1e1df136780f4/2%20-%20AZ-900%20Microsoft%20Azure%20Fundamentals.md)
+
 ### Why AZ-900?
 
 Completing AZ-900 is important because it provides a foundational understanding of Microsoft
 Azure, essential for anyone looking to build a career in cloud computing.
 
-#### Certification Info:
+#### Certification Info
 
 [Exam AZ-900: Microsoft Azure Fundamentals - Certifications | Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/)
 
@@ -96,16 +100,16 @@ Azure, essential for anyone looking to build a career in cloud computing.
 
 There are lots of free resources available on the Internet for AZ-900. If you are a video person like me, who likes to learn things by watching videos, you can watch any ONE (based on your preference) of the below videos to prepare for the exam.
 
-1. AZ-900 Azure Fundamentals Exam Cram (2024 Edition) - Full Course by Inside Cloud and Security: https://youtu.be/8n-kWJetQRk?si=DsZkp01YiiLUnrMi
+1. [AZ-900 Azure Fundamentals Exam Cram (2024 Edition) - Full Course](https://youtu.be/8n-kWJetQRk?si=DsZkp01YiiLUnrMi) by Inside Cloud and Security on YouTube
 
-### Test your Learning!
+### Test your Learning
 
 Once you are done learning the AZ-900 concepts, it’s now time to test your learnings. One thing to be aware of is that, for each question, there will be a discussion tab. Make sure you read the comments from
 the discussion and validate the right answer for the question (mostly the highly voted one will be the right answer). It is important to check the discussion because sometimes the answer given to the question might be wrong, so please go through the discussion tab for all the questions.
 
 https://www.examtopics.com/exams/microsoft/az-900/
 
-### Book the Exam.
+### Book the Exam
 
 Okay, once you have learned all the topics and practiced all the practice questions, you can book the exam using the link below (it’s an online-based exam).
 
@@ -115,6 +119,8 @@ Watch the below video to understand how to book exam:
 How to schedule azure exam with Pearson VUE | AZ-900, AI-900, DP-900, SC-900 - YouTube
 
 ## Stage 4: Azure Data Tools
+
+[See my DP-900 Microsoft Azure Data Fundatmentals Notes](https://github.com/chasinggreg/100_Days_DA/blob/60ac3eae9914f0eff3964875c9cc79349fe528e2/3%20-%20DP-900%20Notes.md)
 
 ### Create a Free Azure Account
 
@@ -161,17 +167,15 @@ specifically designed for big data analytics. It allows organizations to capture
 
 Watch the below two videos two understand more about Azure Data Lake:
 
-1. https://www.youtube.com/watch?v=XTQ33RHdeG4&list=PLrG_BXEk3kXxv0IEASoJRTHuR
-   q_DUqrjR&index=6
-2. https://www.youtube.com/watch?v=B1FgexgPcqg&list=PLrG_BXEk3kXxv0IEASoJRTHuRq_
-   DUqrjR&index=7
+1. https://www.youtube.com/watch?v=XTQ33RHdeG4&list=PLrG_BXEk3kXxv0IEASoJRTHuRq_DUqrjR&index=6
+2. https://www.youtube.com/watch?v=B1FgexgPcqg&list=PLrG_BXEk3kXxv0IEASoJRTHuRqDUqrjR&index=7
 
 ### Microsoft Fabric
 
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
 
-Watch the below YT playlist to understand more about Microsoft Fabric:
-https://www.youtube.com/playlist?list=PLrG_BXEk3kXybedCIBBI4lmaIbtbn7MdM
+[Watch this playlist on YouTube to understand more about Microsoft Fabric](https://www.youtube.com/playlist?list=PLrG_BXEk3kXybedCIBBI4lmaIbtbn7MdM)
+
 Spend the entire fourth month learning more about these 5 important Azure Data Engineering
 tools. The video playlist provided above is really good for anyone to get familiar with these tools.
 
@@ -195,7 +199,7 @@ Azure Data Engineer Role: If you aspire to work in a role specifically related t
 
 Firstly, I would say that there are very limited resources available on the Internet that cover DP-203 content (Planning to create a playlist on my YouTube channel soon). I have consolidated some good resources available and have mentioned them below:
 
-##### Free Ones:
+##### Free Ones
 
 1. https://www.youtube.com/playlist?list=PL7ZG6NdDdT8NRHDU5shVgGjlua297bm-H
 2. https://www.youtube.com/playlist?list=PL-oeM7CaGtVjRgNJ5oy9xbrpcOYr3RhZG
@@ -208,7 +212,7 @@ https://www.udemy.com/course/dp200exam/ (Look for offers before buying)
 
 #### Test your Learnings
 
-#### Book your exam:
+#### Book your exam
 
 Book the exam once you have gone through all the questions from Exam Topics.
 

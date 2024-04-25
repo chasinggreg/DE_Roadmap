@@ -1,4 +1,4 @@
-# DP-900 Notes
+# DP-900 Microsoft Azure Data Fundamentals Notes
 
 <p align="center">
   <img width="128" height="128" src="./Assets/microsoft-certified-fundamentals-badge.svg">
