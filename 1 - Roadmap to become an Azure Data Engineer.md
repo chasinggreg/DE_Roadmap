@@ -8,13 +8,17 @@
 
 SQL is important for data engineers because it helps them easily organize, retrieve, and work with information stored in databases.
 
-#### Steps
+#### SQL Steps
 
 1. Watch the video below to receive a fundamental introduction to SQL, spending 3 hours
    to become familiar with its syntax and concepts.
+
    Programming with Mosh: https://www.youtube.com/watch?v=7S_tz1z_5bA
+
 2. Practice as much as possible using W3 Schools.
+
    W3 School link: https://www.w3schools.com/sql/
+
    Practice is the Key- if you are absolute beginner spend 15 days to learn SQL.
 
 ### WHY PYTHON?
@@ -22,13 +26,16 @@ SQL is important for data engineers because it helps them easily organize, retri
 Python is crucial for data engineers because it offers a versatile and readable programming
 language with extensive libraries, facilitating efficient data manipulation and analysis in various data engineering tasks.
 
-#### Steps
+#### Python Steps
 
 1. Watch the awesome video below to receive a basic introduction to Python and become
    familiar with its syntax and concepts in 1 Hour.
-   Programming with Mosh: https://www.youtube.com/watch?v=kqtD5dpn9C8
+
+   The complete guide to Python by [Clear Code](https://www.youtube.com/@ClearCode) on YouTube: https://youtu.be/mDKM-JtUhhc?si=1IOXoeY7DoVBWLRE
+
 2. Practice as much as possible using W3 Schools
    W3 School link: https://www.w3schools.com/python/
+
    Practice is the Key- if you are an absolute beginner spend 15 days to learn Python.
 
 ## Stage 2: Data Warehouse and Data Modeling Concepts

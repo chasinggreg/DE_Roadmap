@@ -1287,6 +1287,8 @@ Role definition is an answer to a question “**What** can be done?”
 - Blueprint **definition** – describing what should happen (reusable package)
 - Blueprint **assignment** – describing where it should happen (package deployment)
 
+![alt text](./Assets/azure_blueprint_resource_group.png)
+
 ### Episode 33: Cloud Adoption Framework
 
 #### Cloud adoption
@@ -1347,12 +1349,12 @@ prepared by Microsoft to help companies with their cloud adoption journey.
 
 1. Digital Estate (INVENTORY OF ASSETS)
    - Review current landscape and list all projects/solutions (digital assets)
-   - Choose one of the five (5) R’s of rationalization
-     - Rehost - move as is; typically into containers or IaaS (virtual machines)
-     - Refactor - make small code changes and move to PaaS (ex. Azure SQL, Azure App Service, etc.)
-     - Rearchitect - make complex code changes to introduce new features or fix incompatible apps
-     - Rebuild - create a new application using cloud first design
-     - Replace - review available SaaS solutions and replace legacy or unneeded applications
+   - Choose one of the five (5) R’s of rationalization:
+     - **Rehost** - move as is; typically into containers or IaaS (virtual machines)
+     - **Refactor** - make small code changes and move to PaaS (ex. Azure SQL, Azure App Service, etc.)
+     - **Rearchitect** - make complex code changes to introduce new features or fix incompatible apps
+     - **Rebuild** - create a new application using cloud first design
+     - **Replace** - review available SaaS solutions and replace legacy or unneeded applications
 2. Initial Organization Alignment
    - Align people so they will support your adoption plan
    - Map people to capabilities
@@ -1377,6 +1379,7 @@ prepared by Microsoft to help companies with their cloud adoption journey.
    - Apps - Java, .NET, NodeJS web apps, etc.
    - Data - SQL Server, PostreSQL, File Servers, etc.
    - Other - VMware, Azure Stack, etc.
+     ![alt text](./Assets/azure_migration_scenariors.png)
 3. Best Practices - address common migration needs through the application of consistent best practices.
 4. Process Improvements - important part of this porcess heavy activity is to identify bottlenecks and improve with every migration
 
@@ -1405,7 +1408,11 @@ prepared by Microsoft to help companies with their cloud adoption journey.
 
 Ensure that everyone knows what to do and when to do it for every stage in this process. One of the ways to achieve this is via RACI (Responsible, Accountable, Consulted, and Informed) matrix.
 
+![alt text](./Assets/azure_framework_organize.png)
+
 ### Episode 34: Core tenets of Security, Privacy, and Compliance
+
+![alt text](./Assets/ms_privacy_statement.png)
 
 | Document/Website                   | Info                                                                                                                                     | Offers                                                                                      | Audience                                                                             |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -1414,6 +1421,10 @@ Ensure that everyone knows what to do and when to do it for every stage in this 
 | **Data Protection Addendum**       | Appending to OST describing obligations by both parties (Microsoft and you) with regards to the processing of customer and personal data | Microsoft Online Services like Azure, Microsoft 365 services, Bing Maps, etc.               | Organizations - legal teams, security teams                                          |
 | **Trust Center**                   | One stop shop web portal for everything related to security, compliance, privacy, policies, best practices, etc.                         | Microsoft Online Services like Azure, Microsoft 365 services, Bing Maps, etc.               | Organizations - legal teams, security teams, business managers, administrators       |
 | **Azure Compliance Documentation** | Web portal focusing on compliance offerings in Azure, simmilar to the trust center but narrowed down                                     | Azure                                                                                       | Organizations - legal teams, security teams, business managers, Azure administrators |
+
+![alt text](./Assets/data_protection_addendum.png)
+
+![alt text](./Assets/trust_center.png)
 
 #### Azure Sovereign Regions
 
@@ -1438,11 +1449,25 @@ Describe methods for planning and managing costs
 ### Episode 35: Cost Affecting Factors
 
 - Base Cost
+
   - **Resource Types** – All Azure services (resources) have resource-specific pricing models. - Typically consisting of one or more metrics.
+
+    ![alt text](./Assets/azure_offer_type.png)
+
   - **Services** – Azure specific offers (Enterprise, Web Direct, CSP, etc.) have different cost and - billing components like prepaids, billing cycles, - discounts, etc.
+
+    ![alt text](./Assets/services_costs.png)
+
   - **Location** – running Azure services vary between Azure regions
+
+    ![alt text](./Assets/azure_location.png)
+
   - **Bandwidth** – network traffic when uploading (inbound/ingress) data to Azure or downloading - (outbound/egress) from Azure
+
+    ![alt text](./Assets/azure_bandwidth.png)
+
 - Savings
+
   - Reserved Instances
   - Hybrid Benefits
 
@@ -1452,12 +1477,16 @@ Describe methods for planning and managing costs
 
 Purchase Azure services for 1 or 3 years in advance with a significant discounts
 
+![alt text](./Assets/azure_reservations.png)
+
 - **Reserved instances** – Azure Virtual Machines
 - **Reserved capacity** – Azure Storage, SQL Database vCores, Databricks DBUs, Cosmos DB RUs
 - **Software plans** – Red Hat, Red Hat OpenShift, SUSE Linux, etc.
 - **Reservations** are made for 1 or 3 years
 
 #### Azure Spot VMs
+
+![alt text](./Assets/azure_spot_vms.png)
 
 Purchase unused Virtual Machine capacity for significant discount
 
@@ -1467,7 +1496,11 @@ Purchase unused Virtual Machine capacity for significant discount
   - Customer can **set maximum price** after discount to keep or evict the machine
 - **Best for interruptable workloads** (batch processing, dev/test environments, large compute workloads, non-critical tasks, etc.)
 
+![alt text](./Assets/azure_spot_vms_example.png)
+
 #### Hybrid use Benefit
+
+![alt text](./Assets/hybrid_use_benefit.png)
 
 Use existing licenses in the cloud
 
@@ -1496,6 +1529,8 @@ Use existing licenses in the cloud
   - View the report
 
 ### Episode 37: Azure Cost Management
+
+![alt text](./Assets/azure_cost_management.png)
 
 #### Azure Cost Management
 
@@ -1567,6 +1602,8 @@ Availability of S1 OR S2 = 100% - ( Unvailability(S1) \* Unvailability(S2) )
 - Availability(both-web) = 0.99999975
 - Availability(both-web) ~ 99.9999%
 
+![alt text](./Assets/sla_example_load.png)
+
 #### Key Items
 
 - **Formal agreement** between **Microsoft** & the **customer**
@@ -1580,6 +1617,8 @@ Availability of S1 OR S2 = 100% - ( Unvailability(S1) \* Unvailability(S2) )
 ### Episode 39: Service lifecycle in Azure
 
 #### Service Lifecycle
+
+![alt text](./Assets/service_lifecycle.png)
 
 - Every service in Azure follows its own service lifecycle
 - **Public preview** is a ‘**beta**’ stage of the service available to general public use
