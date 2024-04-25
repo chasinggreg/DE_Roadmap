@@ -207,13 +207,13 @@ Below table presents high level deployment model separation
 | -------------- | -------------- |
 | ✅             | ✖              |
 
-##### Key Characteristics
+##### Public Cloud Key Characteristics
 
 Everything runs on cloud provider hardware
 No local hardware
 Some services share hardware with other customers
 
-##### Advantages
+##### Public Cloud Advantages
 
 - No CapEx (No initial investment)
 - High Availability
@@ -222,7 +222,7 @@ Some services share hardware with other customers
 - No hardware maintenance
 - No deep technical skills required
 
-##### Disadvantages
+##### Public Cloud Disadvantages
 
 - Not all security and compliance policies can be met
 - No ownership over the physical infrastructure
@@ -236,19 +236,19 @@ Some services share hardware with other customers
 | -------------- | -------------- |
 | ✖              | ✅             |
 
-##### Key Characteristics
+##### Private Cloud Key Characteristics
 
 - Everything runs on your own datacenter
 - Self-service should be provided
 - You maintain the hardware
 
-##### Advantages
+##### Private Cloud Advantages
 
 - Can support any scenario
 - Total control over security and infrastructure
 - Can meet any security and compliance policy
 
-##### Disadvantages
+##### Private Cloud Disadvantages
 
 - Initial investment is required (CapEx)
 - Limited agility constrained by server capacity and team skills
@@ -262,11 +262,11 @@ Some services share hardware with other customers
 | -------------- | -------------- |
 | ✅             | ✅             |
 
-##### Key Characteristic
+##### Hybrid Cloud Key Characteristic
 
 - Combines both Public & Private cloud
 
-##### Advantages
+##### Hybrid Cloud Advantages
 
 - Great flexibility
 - You can run any legacy apps in private cloud
@@ -274,7 +274,7 @@ Some services share hardware with other customers
 - Meet any security& compliance requirements
 - Can take advantage of all public cloud benefits
 
-##### Disadvantages
+##### Hybrid Cloud Disadvantages
 
 - Can be more expensive
 - Complicated to manage due to larger landscape
@@ -1139,7 +1139,7 @@ The process of controlling, verifying, tracking and managing access to authorize
 
 ![alt text](./Assets/azure_security_center.png)
 
-#### Identity
+#### Azure Identity
 
 - **Centralized/unified** infrastructure and platform **security management service**
 - **Natively embedded** in Azure services
@@ -1634,4 +1634,4 @@ Availability of S1 OR S2 = 100% - ( Unvailability(S1) \* Unvailability(S2) )
 - Limited functionality
 - Pricing changes
 - Direction changes
-- Azure Portal Previews (https://preview.portal.azure.com)
+- [Azure Portal Previews](https://preview.portal.azure.com)
